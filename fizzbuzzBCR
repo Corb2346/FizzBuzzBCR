@@ -1,0 +1,27 @@
+const valorUsuario=100;
+        for(let i=1;i<=valorUsuario;i++){
+
+            const resultadoDivEntre3 = i % 3;
+            const resultadoDivEntre5 = i % 5;
+            let banderilla = 0;
+
+            if(resultadoDivEntre3 == 0){
+
+                console.log(`El valor: ${i} es divisible entre 3 FIZZ`);
+                banderilla = banderilla +1;
+            }
+             else console.log(`El valor ${i} no es divisible entre 3`);
+
+             if(resultadoDivEntre5 ==0 ){
+
+                console.log(`El valor: ${i} es divisible entre 5 BUZZ`);
+                banderilla= banderilla+1;
+
+             }
+             else console.log(`El valor ${i} no es divisible entre 5`);
+
+             if(banderilla == 2){ console.log(`El valor ${i} es divisible entre 3 y 5 FIZZBUZZ `)
+
+             }
+
+        }
